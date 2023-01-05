@@ -14,7 +14,7 @@ const Balances: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Safe – Assets</title>
+        <title>Telos Safe – Assets</title>
       </Head>
 
       <AssetsHeader currencySelect />
