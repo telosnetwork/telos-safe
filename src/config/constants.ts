@@ -2,9 +2,8 @@ import chains from './chains'
 
 export const IS_PRODUCTION = process.env.NEXT_PUBLIC_IS_PRODUCTION
 
-export const GATEWAY_URL_PRODUCTION =
-  process.env.NEXT_PUBLIC_GATEWAY_URL_PRODUCTION || 'https://safe-client.safe.global'
-export const GATEWAY_URL_STAGING = process.env.NEXT_PUBLIC_GATEWAY_URL_STAGING || 'https://safe-client.staging.5afe.dev'
+export const GATEWAY_URL_PRODUCTION = process.env.NEXT_PUBLIC_GATEWAY_URL_PRODUCTION || 'https://gateway.safe.telos.net'
+export const GATEWAY_URL_STAGING = process.env.NEXT_PUBLIC_GATEWAY_URL_STAGING || 'https://gateway.safe.telos.net'
 
 // Magic numbers
 export const POLLING_INTERVAL = 15_000
