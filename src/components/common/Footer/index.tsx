@@ -1,5 +1,5 @@
 import type { SyntheticEvent, ReactElement } from 'react'
-import { Link, Typography } from '@mui/material'
+import { /* Link, */ Typography } from '@mui/material'
 import { useRouter } from 'next/router'
 import css from './styles.module.css'
 import { useAppDispatch } from '@/store'
@@ -28,29 +28,34 @@ const Footer = (): ReactElement | null => {
     <footer className={css.container}>
       <ul>
         <li>
-          <Typography variant="caption">&copy;2022 Safe Ecosystem Foundation</Typography>
+          <Typography variant="caption">&copy;2022 Telos Safe</Typography>
         </li>
         <li>
-          <ExternalLink suppressIcon href="https://safe.global/terms">
+          <ExternalLink suppressIcon href="https://www.telos.net/">
+            Telos Foundation
+          </ExternalLink>
+        </li>
+        <li>
+          <ExternalLink suppressIcon href="https://www.telos.net/terms-of-service">
             Terms
           </ExternalLink>
         </li>
         <li>
-          <ExternalLink suppressIcon href="https://safe.global/privacy">
+          <ExternalLink suppressIcon href="https://www.telos.net/privacy-policy">
             Privacy
           </ExternalLink>
         </li>
         <li>
-          <ExternalLink suppressIcon href="https://safe.global/licenses">
-            Licenses
+          <ExternalLink suppressIcon href="https://help.gnosis-safe.io/">
+            Help Center
           </ExternalLink>
         </li>
         <li>
-          <ExternalLink suppressIcon href="https://safe.global/imprint">
-            Imprint
+          <ExternalLink suppressIcon href="https://gnosis-safe.io/licenses">
+            Gnosis-Safe Licenses
           </ExternalLink>
         </li>
-        <li>
+        {/* <li>
           <ExternalLink suppressIcon href="https://safe.global/cookie">
             Cookie Policy
           </ExternalLink>
@@ -58,7 +63,7 @@ const Footer = (): ReactElement | null => {
           <Link href="#" onClick={onCookieClick}>
             Preferences
           </Link>
-        </li>
+        </li> */}
         <li>
           <ExternalLink suppressIcon href={`${packageJson.homepage}/releases/tag/v${packageJson.version}`}>
             v{packageJson.version}
