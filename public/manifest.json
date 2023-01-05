@@ -1,6 +1,6 @@
 {
-  "name": "Safe",
-  "short_name": "Safe",
+  "name": "Telos Safe",
+  "short_name": "Telos Safe",
   "icons": [
     {
       "src": "/favicons/android-chrome-192x192.png",
@@ -13,5 +13,7 @@
       "type": "image/png"
     }
   ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "display": "standalone"
 }
