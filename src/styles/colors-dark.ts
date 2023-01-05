@@ -1,13 +1,13 @@
 const darkPalette = {
   text: {
-    primary: '#FFFFFF',
-    secondary: '#636669',
-    disabled: '#636669',
+    primary: '#B3C6D9',
+    secondary: '#bdccfb',
+    disabled: '#bdccfb',
   },
   primary: {
-    dark: '#0cb259',
-    main: '#12FF80',
-    light: '#A1A3A7',
+    dark: '#bdccfb',
+    main: '#a0b3f8',
+    light: '#bdccfb',
   },
   secondary: {
     dark: '#636669',
@@ -17,7 +17,7 @@ const darkPalette = {
   },
   border: {
     main: '#636669',
-    light: '#303033',
+    light: '#E2E7F9',
     background: '#121312',
   },
   error: {
@@ -48,13 +48,13 @@ const darkPalette = {
     default: '#121312',
     main: '#121312',
     paper: '#1C1C1C',
-    light: '#1B2A22',
+    light: '#292D3C',
   },
   backdrop: {
     main: '#636669',
   },
   logo: {
-    main: '#FFFFFF',
+    main: '#C9CAFF',
     background: '#303033',
   },
   static: {

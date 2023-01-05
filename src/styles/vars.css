@@ -35,7 +35,7 @@
   --color-background-paper: #ffffff;
   --color-background-light: #effff4;
   --color-backdrop-main: #636669;
-  --color-logo-main: #121312;
+  --color-logo-main: #15166D;
   --color-logo-background: #eeeff0;
   --color-static-main: #121312;
   --space-1: 8px;
@@ -53,7 +53,7 @@
 }
 
 [data-theme='dark'] {
-  --color-text-primary: #ffffff;
+  --color-text-primary: #B3C6D9;
   --color-text-secondary: #636669;
   --color-text-disabled: #636669;
   --color-primary-dark: #0cb259;
@@ -85,9 +85,9 @@
   --color-background-default: #121312;
   --color-background-main: #121312;
   --color-background-paper: #1c1c1c;
-  --color-background-light: #1b2a22;
+  --color-background-light: #292D3C;
   --color-backdrop-main: #636669;
-  --color-logo-main: #ffffff;
+  --color-logo-main: #C9CAFF;
   --color-logo-background: #303033;
   --color-static-main: #121312;
 }
@@ -95,7 +95,7 @@
 /* The same as above for the brief moment before JS loads */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --color-text-primary: #ffffff;
+    --color-text-primary: #B3C6D9;
     --color-text-secondary: #636669;
     --color-text-disabled: #636669;
     --color-primary-dark: #0cb259;
@@ -127,9 +127,9 @@
     --color-background-default: #121312;
     --color-background-main: #121312;
     --color-background-paper: #1c1c1c;
-    --color-background-light: #1b2a22;
+    --color-background-light: #292D3C;
     --color-backdrop-main: #636669;
-    --color-logo-main: #ffffff;
+    --color-logo-main: #C9CAFF;
     --color-logo-background: #303033;
     --color-static-main: #121312;
   }

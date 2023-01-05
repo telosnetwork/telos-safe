@@ -5,9 +5,9 @@ const palette = {
     disabled: '#DDDEE0',
   },
   primary: {
-    dark: '#3c3c3c',
-    main: '#121312',
-    light: '#636669',
+    dark: '#041242',
+    main: '#071A5F',
+    light: '#041242',
   },
   secondary: {
     dark: '#0FDA6D',
@@ -54,7 +54,7 @@ const palette = {
     main: '#636669',
   },
   logo: {
-    main: '#121312',
+    main: '#15166D',
     background: '#EEEFF0',
   },
   static: {
