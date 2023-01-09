@@ -30,7 +30,7 @@ const ExportLink = ({ children }: { children: ReactNode }): ReactElement => {
 const BANNERS: Record<string, ReactElement | string> = {
   '*': (
     <>
-      <b>Telos Safe</b>has migrated to a new version. Old version is available <ExportLink>here</ExportLink>.
+      <b>Telos Safe</b> has migrated to a new version. Old version is available <ExportLink>here</ExportLink>.
     </>
   ),
 }

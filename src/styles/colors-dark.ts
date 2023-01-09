@@ -3,6 +3,7 @@ const darkPalette = {
     primary: '#B3C6D9',
     secondary: '#bdccfb',
     disabled: '#bdccfb',
+    light: '#ffffff',
   },
   primary: {
     dark: '#bdccfb',
@@ -17,7 +18,7 @@ const darkPalette = {
   },
   border: {
     main: '#636669',
-    light: '#E2E7F9',
+    light: '#292D3C',
     background: '#121312',
   },
   error: {
