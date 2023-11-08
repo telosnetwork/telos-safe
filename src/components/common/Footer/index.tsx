@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import css from './styles.module.css'
 import { AppRoutes } from '@/config/routes'
 import packageJson from '../../../../package.json'
-import AppstoreButton from '../AppStoreButton'
+//import AppstoreButton from '../AppStoreButton'
 import ExternalLink from '../ExternalLink'
 import MUILink from '@mui/material/Link'
 import { IS_DEV, IS_OFFICIAL_HOST } from '@/config/constants'
@@ -44,18 +44,21 @@ const Footer = (): ReactElement | null => {
   return (
     <footer className={css.container}>
       <ul>
-        {IS_OFFICIAL_HOST || IS_DEV ? (
+        {IS_OFFICIAL_HOST === false || IS_DEV ? (
           <>
             <li>
-              <Typography variant="caption">&copy;2022–{new Date().getFullYear()} Core Contributors GmbH</Typography>
+              <Typography variant="caption">&copy;2022–{new Date().getFullYear()} Telos Safe</Typography>
             </li>
             <li>
-              <FooterLink href={getHref(AppRoutes.terms)}>Terms</FooterLink>
+              <ExternalLink href="https://www.telos.net/">Telos Foundation</ExternalLink>
             </li>
             <li>
-              <FooterLink href={getHref(AppRoutes.privacy)}>Privacy</FooterLink>
+              <ExternalLink href={getHref(AppRoutes.terms)}>Terms</ExternalLink>
             </li>
             <li>
+              <ExternalLink href={getHref(AppRoutes.privacy)}>Privacy</ExternalLink>
+            </li>
+            {/* <li>
               <FooterLink href={getHref(AppRoutes.licenses)}>Licenses</FooterLink>
             </li>
             <li>
@@ -63,7 +66,7 @@ const Footer = (): ReactElement | null => {
             </li>
             <li>
               <FooterLink href={getHref(AppRoutes.cookie)}>Cookie policy</FooterLink>
-            </li>
+            </li> */}
             <li>
               <FooterLink href={getHref(AppRoutes.settings.index)}>Preferences</FooterLink>
             </li>
@@ -77,9 +80,9 @@ const Footer = (): ReactElement | null => {
             v{packageJson.version}
           </ExternalLink>
         </li>
-        <li>
+        {/* <li>
           <AppstoreButton placement="footer" />
-        </li>
+        </li> */}
       </ul>
     </footer>
   )
