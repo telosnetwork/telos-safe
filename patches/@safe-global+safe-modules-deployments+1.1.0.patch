@@ -1,0 +1,13 @@
+diff --git a/node_modules/@safe-global/safe-modules-deployments/dist/assets/allowance-module/v0.1.0/allowance-module.json b/node_modules/@safe-global/safe-modules-deployments/dist/assets/allowance-module/v0.1.0/allowance-module.json
+index be46b64..0556f20 100644
+--- a/node_modules/@safe-global/safe-modules-deployments/dist/assets/allowance-module/v0.1.0/allowance-module.json
++++ b/node_modules/@safe-global/safe-modules-deployments/dist/assets/allowance-module/v0.1.0/allowance-module.json
+@@ -6,6 +6,8 @@
+         "1": "0xCFbFaC74C26F8647cBDb8c5caf80BB5b32E43134",
+         "4": "0xCFbFaC74C26F8647cBDb8c5caf80BB5b32E43134",
+         "5": "0xCFbFaC74C26F8647cBDb8c5caf80BB5b32E43134",
++        "40": "0xE46FE78DBfCa5E835667Ba9dCd3F3315E7623F8a",
++        "41": "0xE46FE78DBfCa5E835667Ba9dCd3F3315E7623F8a",
+         "42": "0xCFbFaC74C26F8647cBDb8c5caf80BB5b32E43134",
+         "56": "0xCFbFaC74C26F8647cBDb8c5caf80BB5b32E43134",
+         "100": "0xCFbFaC74C26F8647cBDb8c5caf80BB5b32E43134",
