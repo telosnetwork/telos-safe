@@ -101,11 +101,11 @@ const OutreachPopup = (): ReactElement | null => {
                 <Typography variant="h4" fontWeight={700}>
                   Your voice matters!
                   <br />
-                  Help us improve {'Safe{Wallet}'}.
+                  Help us improve Telos Safe.
                 </Typography>
                 <Typography>
-                  In 1 minute, tell us why you use {'Safe{Wallet}'}. Your input will help us create a better, smarter
-                  wallet experience for you!
+                  In 1 minute, tell us why you use Telos Safe. Your input will help us create a better, smarter wallet
+                  experience for you!
                 </Typography>
                 <Track {...OUTREACH_EVENTS.OPEN_SURVEY}>
                   <Link rel="noreferrer noopener" target="_blank" href={outreachUrl}>
