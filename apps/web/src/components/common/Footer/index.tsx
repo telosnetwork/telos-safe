@@ -49,30 +49,19 @@ const Footer = (): ReactElement | null => {
         {isOfficialHost ? (
           <>
             <li>
-              <Typography variant="caption">&copy;2022–{new Date().getFullYear()} Core Contributors GmbH</Typography>
+              <Typography variant="caption">&copy;2022–{new Date().getFullYear()} Telos Safe</Typography>
             </li>
             <li>
-              <FooterLink href={getHref(AppRoutes.terms)}>Terms</FooterLink>
+              <ExternalLink href="https://www.telos.net/">Telos Foundation</ExternalLink>
             </li>
             <li>
-              <FooterLink href={getHref(AppRoutes.privacy)}>Privacy</FooterLink>
+              <ExternalLink href="https://www.telos.net/terms-of-service">Terms</ExternalLink>
             </li>
             <li>
-              <FooterLink href={getHref(AppRoutes.licenses)}>Licenses</FooterLink>
-            </li>
-            <li>
-              <FooterLink href={getHref(AppRoutes.imprint)}>Imprint</FooterLink>
-            </li>
-            <li>
-              <FooterLink href={getHref(AppRoutes.cookie)}>Cookie policy</FooterLink>
+              <ExternalLink href="https://www.telos.net/privacy-policy">Privacy</ExternalLink>
             </li>
             <li>
               <FooterLink href={getHref(AppRoutes.settings.index)}>Preferences</FooterLink>
-            </li>
-            <li>
-              <ExternalLink href={HELP_CENTER_URL} noIcon sx={{ span: { textDecoration: 'underline' } }}>
-                Help
-              </ExternalLink>
             </li>
           </>
         ) : (
