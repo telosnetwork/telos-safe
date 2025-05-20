@@ -1,0 +1,13 @@
+diff --git a/dist/assets/allowance-module/v0.1.0/allowance-module.json b/dist/assets/allowance-module/v0.1.0/allowance-module.json
+index a4fe2e54016c024afb0f83648b1a68712659c94f..6aa8b8e84236545dc37fdce733973fb20a86e4e9 100644
+--- a/dist/assets/allowance-module/v0.1.0/allowance-module.json
++++ b/dist/assets/allowance-module/v0.1.0/allowance-module.json
+@@ -6,6 +6,8 @@
+         "1": "0xCFbFaC74C26F8647cBDb8c5caf80BB5b32E43134",
+         "4": "0xCFbFaC74C26F8647cBDb8c5caf80BB5b32E43134",
+         "5": "0xCFbFaC74C26F8647cBDb8c5caf80BB5b32E43134",
++        "40": "0xE46FE78DBfCa5E835667Ba9dCd3F3315E7623F8a",
++        "41": "0xE46FE78DBfCa5E835667Ba9dCd3F3315E7623F8a",
+         "42": "0xCFbFaC74C26F8647cBDb8c5caf80BB5b32E43134",
+         "56": "0xCFbFaC74C26F8647cBDb8c5caf80BB5b32E43134",
+         "100": "0xCFbFaC74C26F8647cBDb8c5caf80BB5b32E43134",
