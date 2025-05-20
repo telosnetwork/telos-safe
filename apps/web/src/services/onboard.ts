@@ -44,7 +44,7 @@ export const createOnboard = (
 
     appMetadata: {
       name: BRAND_NAME,
-      icon: location.origin + '/images/logo-round.svg',
+      icon: location.origin + '/images/logo-no-text.svg',
       description: `${BRAND_NAME} – smart contract wallet for Ethereum (ex-Gnosis Safe multisig)`,
     },
 
