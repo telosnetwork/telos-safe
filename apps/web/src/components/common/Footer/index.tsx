@@ -8,7 +8,6 @@ import { AppRoutes } from '@/config/routes'
 import packageJson from '../../../../package.json'
 import ExternalLink from '../ExternalLink'
 import MUILink from '@mui/material/Link'
-import { useIsOfficialHost } from '@/hooks/useIsOfficialHost'
 
 const footerPages = [
   AppRoutes.welcome.index,
@@ -32,7 +31,6 @@ const FooterLink = ({ children, href }: { children: ReactNode; href: string }): 
 
 const Footer = (): ReactElement | null => {
   const router = useRouter()
-  const isOfficialHost = useIsOfficialHost()
 
   if (!footerPages.some((path) => router.pathname.startsWith(path))) {
     return null
@@ -45,27 +43,21 @@ const Footer = (): ReactElement | null => {
   return (
     <footer className={css.container}>
       <ul>
-        {isOfficialHost ? (
-          <>
-            <li>
-              <Typography variant="caption">&copy;2022–{new Date().getFullYear()} Telos Safe</Typography>
-            </li>
-            <li>
-              <ExternalLink href="https://www.telos.net/">Telos Foundation</ExternalLink>
-            </li>
-            <li>
-              <ExternalLink href="https://www.telos.net/terms-of-service">Terms</ExternalLink>
-            </li>
-            <li>
-              <ExternalLink href="https://www.telos.net/privacy-policy">Privacy</ExternalLink>
-            </li>
-            <li>
-              <FooterLink href={getHref(AppRoutes.settings.index)}>Preferences</FooterLink>
-            </li>
-          </>
-        ) : (
-          <li>This is an unofficial distribution of the app</li>
-        )}
+        <li>
+          <Typography variant="caption">&copy;2022–{new Date().getFullYear()} Telos Safe</Typography>
+        </li>
+        <li>
+          <ExternalLink href="https://www.telos.net/">Telos Foundation</ExternalLink>
+        </li>
+        <li>
+          <ExternalLink href="https://www.telos.net/terms-of-service">Terms</ExternalLink>
+        </li>
+        <li>
+          <ExternalLink href="https://www.telos.net/privacy-policy">Privacy</ExternalLink>
+        </li>
+        <li>
+          <FooterLink href={getHref(AppRoutes.settings.index)}>Preferences</FooterLink>
+        </li>
 
         <li>
           <ExternalLink href={`${packageJson.homepage}/releases/tag/v${packageJson.version}`} noIcon>

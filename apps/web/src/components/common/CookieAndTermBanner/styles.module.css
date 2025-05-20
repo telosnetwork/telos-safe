@@ -24,7 +24,7 @@
 }
 
 .container.inverted {
-  background: var(--color-text-primary);
+  background: #fff;
 }
 
 .container.inverted,
@@ -39,4 +39,8 @@
 
 .container.inverted :global(.Mui-checked.Mui-disabled) {
   opacity: 0.5;
+}
+
+.save_settings:hover {
+  background-color: var(--color-text-primary);
 }

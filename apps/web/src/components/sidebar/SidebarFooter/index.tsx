@@ -11,13 +11,11 @@ import { BEAMER_SELECTOR, loadBeamer } from '@/services/beamer'
 import { useAppDispatch, useAppSelector } from '@/store'
 import { CookieAndTermType, hasConsentFor } from '@/store/cookiesAndTermsSlice'
 import { openCookieBanner } from '@/store/popupSlice'
-import BeamerIcon from '@/public/images/sidebar/whats-new.svg'
 import HelpCenterIcon from '@/public/images/sidebar/help-center.svg'
+import SuggestionIcon from '@/public/images/lightbulb_icon.svg'
 import { ListItem } from '@mui/material'
 import DebugToggle from '../DebugToggle'
-import { HELP_CENTER_URL, IS_PRODUCTION } from '@/config/constants'
-import Track from '@/components/common/Track'
-import { OVERVIEW_EVENTS } from '@/services/analytics/events/overview'
+import { HELP_CENTER_URL, IS_PRODUCTION, NEW_SUGGESTION_FORM } from '@/config/constants'
 import { useCurrentChain } from '@/hooks/useChains'
 
 const SidebarFooter = (): ReactElement => {
@@ -46,33 +44,31 @@ const SidebarFooter = (): ReactElement => {
         </ListItem>
       )}
 
-      <Track {...OVERVIEW_EVENTS.WHATS_NEW}>
-        <ListItem disablePadding>
-          <SidebarListItemButton id={BEAMER_SELECTOR} onClick={handleBeamer}>
+      <ListItem disablePadding>
+        <a target="_blank" rel="noopener noreferrer" href={NEW_SUGGESTION_FORM} style={{ width: '100%' }}>
+          <SidebarListItemButton id={BEAMER_SELECTOR} style={{ backgroundColor: '#a0b3f8', color: 'black' }}>
             <SidebarListItemIcon color="primary">
-              <BeamerIcon />
+              <SuggestionIcon />
             </SidebarListItemIcon>
-            <SidebarListItemText data-testid="list-item-whats-new" bold>
-              What&apos;s new
+            <SidebarListItemText data-testid="list-item-need-help" bold>
+              New Features Suggestion?
             </SidebarListItemText>
           </SidebarListItemButton>
-        </ListItem>
-      </Track>
+        </a>
+      </ListItem>
 
-      <Track {...OVERVIEW_EVENTS.HELP_CENTER}>
-        <ListItem disablePadding>
-          <a target="_blank" rel="noopener noreferrer" href={HELP_CENTER_URL} style={{ width: '100%' }}>
-            <SidebarListItemButton>
-              <SidebarListItemIcon color="primary">
-                <HelpCenterIcon />
-              </SidebarListItemIcon>
-              <SidebarListItemText data-testid="list-item-need-help" bold>
-                Need help?
-              </SidebarListItemText>
-            </SidebarListItemButton>
-          </a>
-        </ListItem>
-      </Track>
+      <ListItem disablePadding>
+        <a target="_blank" rel="noopener noreferrer" href={HELP_CENTER_URL} style={{ width: '100%' }}>
+          <SidebarListItemButton>
+            <SidebarListItemIcon color="primary">
+              <HelpCenterIcon />
+            </SidebarListItemIcon>
+            <SidebarListItemText data-testid="list-item-need-help" bold>
+              Need help?
+            </SidebarListItemText>
+          </SidebarListItemButton>
+        </a>
+      </ListItem>
     </SidebarList>
   )
 }
