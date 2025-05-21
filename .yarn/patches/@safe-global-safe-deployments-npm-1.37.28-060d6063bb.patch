@@ -1,0 +1,39 @@
+diff --git a/dist/assets/v1.4.1/safe_migration.json b/dist/assets/v1.4.1/safe_migration.json
+index afc803db9daca76bd10f6367b866591a2eb47b6b..d9ff937a15dc833276b48856878142ab9ba9b49c 100644
+--- a/dist/assets/v1.4.1/safe_migration.json
++++ b/dist/assets/v1.4.1/safe_migration.json
+@@ -11,6 +11,8 @@
+     "networkAddresses": {
+         "1": "canonical",
+         "10": "canonical",
++        "40": "canonical",
++        "41": "canonical",
+         "56": "canonical",
+         "81": "canonical",
+         "88": "canonical",
+diff --git a/dist/assets/v1.4.1/safe_to_l2_migration.json b/dist/assets/v1.4.1/safe_to_l2_migration.json
+index 16e005a56912c8f8902cada08eb9424a29308b9d..d9124e0588713a361a5784e7a7399b6b3980b33d 100644
+--- a/dist/assets/v1.4.1/safe_to_l2_migration.json
++++ b/dist/assets/v1.4.1/safe_to_l2_migration.json
+@@ -11,6 +11,8 @@
+     "networkAddresses": {
+         "1": "canonical",
+         "10": "canonical",
++        "40": "canonical",
++        "41": "canonical",
+         "56": "canonical",
+         "81": "canonical",
+         "88": "canonical",
+diff --git a/dist/assets/v1.4.1/safe_to_l2_setup.json b/dist/assets/v1.4.1/safe_to_l2_setup.json
+index 822cf1f56eb0c14c9d86bfb83ae05cdf1431a9ab..767532255c5a6e93b79213b8d0c69c01f2beeadb 100644
+--- a/dist/assets/v1.4.1/safe_to_l2_setup.json
++++ b/dist/assets/v1.4.1/safe_to_l2_setup.json
+@@ -11,6 +11,8 @@
+     "networkAddresses": {
+         "1": "canonical",
+         "10": "canonical",
++        "40": "canonical",
++        "41": "canonical",
+         "56": "canonical",
+         "81": "canonical",
+         "88": "canonical",
