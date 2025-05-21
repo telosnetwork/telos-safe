@@ -50,7 +50,7 @@ const Footer = (): ReactElement | null => {
           <ExternalLink href="https://www.telos.net/">Telos Foundation</ExternalLink>
         </li>
         <li>
-          <ExternalLink href="https://www.telos.net/terms-of-service">Terms</ExternalLink>
+          <ExternalLink href="https://www.telos.net/terms-and-conditions">Terms</ExternalLink>
         </li>
         <li>
           <ExternalLink href="https://www.telos.net/privacy-policy">Privacy</ExternalLink>

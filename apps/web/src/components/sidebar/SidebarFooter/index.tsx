@@ -1,20 +1,13 @@
 import type { ReactElement } from 'react'
 import { useEffect } from 'react'
 
-import {
-  SidebarList,
-  SidebarListItemButton,
-  SidebarListItemIcon,
-  SidebarListItemText,
-} from '@/components/sidebar/SidebarList'
-import { BEAMER_SELECTOR, loadBeamer } from '@/services/beamer'
+import { SidebarList } from '@/components/sidebar/SidebarList'
+import { loadBeamer } from '@/services/beamer'
 import { useAppSelector } from '@/store'
 import { CookieAndTermType, hasConsentFor } from '@/store/cookiesAndTermsSlice'
-import HelpCenterIcon from '@/public/images/sidebar/help-center.svg'
-import SuggestionIcon from '@/public/images/lightbulb_icon.svg'
 import { ListItem } from '@mui/material'
 import DebugToggle from '../DebugToggle'
-import { HELP_CENTER_URL, IS_PRODUCTION, NEW_SUGGESTION_FORM } from '@/config/constants'
+import { IS_PRODUCTION } from '@/config/constants'
 import { useCurrentChain } from '@/hooks/useChains'
 
 const SidebarFooter = (): ReactElement => {
@@ -35,32 +28,6 @@ const SidebarFooter = (): ReactElement => {
           <DebugToggle />
         </ListItem>
       )}
-
-      <ListItem disablePadding>
-        <a target="_blank" rel="noopener noreferrer" href={NEW_SUGGESTION_FORM} style={{ width: '100%' }}>
-          <SidebarListItemButton id={BEAMER_SELECTOR} style={{ backgroundColor: '#a0b3f8', color: 'black' }}>
-            <SidebarListItemIcon color="primary">
-              <SuggestionIcon />
-            </SidebarListItemIcon>
-            <SidebarListItemText data-testid="list-item-need-help" bold>
-              New Features Suggestion?
-            </SidebarListItemText>
-          </SidebarListItemButton>
-        </a>
-      </ListItem>
-
-      <ListItem disablePadding>
-        <a target="_blank" rel="noopener noreferrer" href={HELP_CENTER_URL} style={{ width: '100%' }}>
-          <SidebarListItemButton>
-            <SidebarListItemIcon color="primary">
-              <HelpCenterIcon />
-            </SidebarListItemIcon>
-            <SidebarListItemText data-testid="list-item-need-help" bold>
-              Need help?
-            </SidebarListItemText>
-          </SidebarListItemButton>
-        </a>
-      </ListItem>
     </SidebarList>
   )
 }
