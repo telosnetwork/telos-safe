@@ -52,8 +52,6 @@ const Sidebar = (): ReactElement => {
 
         {/* What's new + Need help? */}
         <SidebarFooter />
-
-        <Divider flexItem />
       </div>
       <Drawer variant="temporary" anchor="left" open={isDrawerOpen} onClose={onDrawerToggle}>
         <div className={css.drawer}>
