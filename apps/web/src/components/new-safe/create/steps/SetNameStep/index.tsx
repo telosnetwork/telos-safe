@@ -10,7 +10,6 @@ import NameInput from '@/components/common/NameInput'
 import { CREATE_SAFE_EVENTS, trackEvent } from '@/services/analytics'
 import { AppRoutes } from '@/config/routes'
 import MUILink from '@mui/material/Link'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 import NoWalletConnectedWarning from '../../NoWalletConnectedWarning'
 import { type SafeVersion } from '@safe-global/safe-core-sdk-types'
@@ -24,6 +23,7 @@ import NetworkMultiSelector from '@/components/common/NetworkSelector/NetworkMul
 import { useAppSelector } from '@/store'
 import { selectChainById } from '@/store/chainsSlice'
 import useWallet from '@/hooks/wallets/useWallet'
+import ExternalLink from '@/components/common/ExternalLink'
 
 type SetNameStepForm = {
   name: string
@@ -141,13 +141,13 @@ function SetNameStep({
           </Grid>
           <Typography variant="body2" mt={2}>
             By continuing, you agree to our{' '}
-            <Link href={AppRoutes.terms} passHref legacyBehavior>
+            <ExternalLink href="https://www.telos.net/terms-and-conditions">
               <MUILink>terms of use</MUILink>
-            </Link>{' '}
+            </ExternalLink>{' '}
             and{' '}
-            <Link href={AppRoutes.privacy} passHref legacyBehavior>
+            <ExternalLink href="https://www.telos.net/privacy-policy">
               <MUILink>privacy policy</MUILink>
-            </Link>
+            </ExternalLink>
             .
           </Typography>
 
