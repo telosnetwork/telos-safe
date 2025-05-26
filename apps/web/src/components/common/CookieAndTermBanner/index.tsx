@@ -96,8 +96,8 @@ export const CookieAndTermBanner = ({
               }}
             >
               By browsing this page, you accept our{' '}
-              <ExternalLink href="https://www.telos.net/terms-of-service">Terms & Conditions</ExternalLink> and the use
-              of necessary cookies.
+              <ExternalLink href="https://www.telos.net/terms-and-conditions">Terms & Conditions</ExternalLink> and the
+              use of necessary cookies.
             </Typography>
 
             <Grid
