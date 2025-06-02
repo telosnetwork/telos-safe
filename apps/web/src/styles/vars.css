@@ -35,7 +35,7 @@
   --color-background-paper: #ffffff;
   --color-background-light: #bdccfb;
   --color-backdrop-main: #636669;
-  --color-logo-main: #15166d;
+  --color-logo-main: #2c2b2f;
   --color-logo-background: #eeeff0;
   --color-static-main: #121312;
   --space-1: 8px;
@@ -88,7 +88,7 @@
   --color-background-paper: #1c1c1c;
   --color-background-light: #292d3c;
   --color-backdrop-main: #636669;
-  --color-logo-main: #c9caff;
+  --color-logo-main: #f9f9f9;
   --color-logo-background: #303033;
   --color-static-main: #121312;
 }
@@ -131,7 +131,7 @@
     --color-background-paper: #1c1c1c;
     --color-background-light: #292d3c;
     --color-backdrop-main: #636669;
-    --color-logo-main: #c9caff;
+    --color-logo-main: #f9f9f9;
     --color-logo-background: #303033;
     --color-static-main: #121312;
   }
