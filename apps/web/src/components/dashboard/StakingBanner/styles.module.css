@@ -51,7 +51,7 @@
 }
 
 .gradientText {
-  background: linear-gradient(225deg, #5fddff 12.5%, #a0b3f8 88.07%);
+  background: linear-gradient(225deg, #5fddff 12.5%, #4facfe 88.07%);
   background-clip: text;
   color: transparent;
 }

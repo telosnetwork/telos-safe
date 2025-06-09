@@ -5,9 +5,9 @@ const darkPalette = {
     disabled: '#636669',
   },
   primary: {
-    dark: '#bdccfb',
-    main: '#a0b3f8',
-    light: '#b3c6d9',
+    dark: '#00f2fe',
+    main: '#4facfe',
+    light: '#4face',
   },
   secondary: {
     dark: '#636669',

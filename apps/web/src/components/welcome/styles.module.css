@@ -74,7 +74,7 @@
 }
 
 .content {
-  background: linear-gradient(-180deg, #a0b3f8, #15166d);
+  background: linear-gradient(142deg, #00f2fe 14.14%, #4facfe 50.81%, #c471f5 80.97%);
   background-size: 200% 200%;
   animation: gradient 15s ease infinite;
   border-radius: 6px;

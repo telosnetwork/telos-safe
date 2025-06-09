@@ -8,9 +8,9 @@
   --color-primary-main: #071a5f;
   --color-primary-light: #041242;
   --color-secondary-dark: #0fda6d;
-  --color-secondary-main: #a0b3f8;
-  --color-secondary-light: #bdccfb;
-  --color-secondary-background: #bdccfb;
+  --color-secondary-main: #4facfe;
+  --color-secondary-light: #00f2fe;
+  --color-secondary-background: #00f2fe;
   --color-border-main: #a1a3a7;
   --color-border-light: #dcdee0;
   --color-border-background: #f4f4f4;
@@ -33,7 +33,7 @@
   --color-background-default: #f4f4f4;
   --color-background-main: #f4f4f4;
   --color-background-paper: #ffffff;
-  --color-background-light: #bdccfb;
+  --color-background-light: #00f2fe;
   --color-backdrop-main: #636669;
   --color-logo-main: #2c2b2f;
   --color-logo-background: #eeeff0;
@@ -53,16 +53,16 @@
 }
 
 [data-theme='dark'] {
-  --color-text-primary: #b3c6d9;
-  --color-text-secondary: #bdccfb;
-  --color-text-disabled: #bdccfb;
+  --color-text-primary: #4facfe;
+  --color-text-secondary: #00f2fe;
+  --color-text-disabled: #00f2fe;
   --color-text-light: #ffffff;
-  --color-primary-dark: #bdccfb;
-  --color-primary-main: #a0b3f8;
-  --color-primary-light: #bdccfb;
+  --color-primary-dark: #00f2fe;
+  --color-primary-main: #4facfe;
+  --color-primary-light: #4facfe;
   --color-secondary-dark: #636669;
   --color-secondary-main: #ffffff;
-  --color-secondary-light: #a0b3f8;
+  --color-secondary-light: #4facfe;
   --color-secondary-background: #303033;
   --color-border-main: #636669;
   --color-border-light: #292d3c;
@@ -96,16 +96,16 @@
 /* The same as above for the brief moment before JS loads */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --color-text-primary: #b3c6d9;
-    --color-text-secondary: #bdccfb;
-    --color-text-disabled: #bdccfb;
+    --color-text-primary: #4facfe;
+    --color-text-secondary: #00f2fe;
+    --color-text-disabled: #00f2fe;
     --color-text-light: #ffffff;
-    --color-primary-dark: #bdccfb;
-    --color-primary-main: #a0b3f8;
-    --color-primary-light: #bdccfb;
+    --color-primary-dark: #00f2fe;
+    --color-primary-main: #4facfe;
+    --color-primary-light: #4facfe;
     --color-secondary-dark: #636669;
     --color-secondary-main: #ffffff;
-    --color-secondary-light: #a0b3f8;
+    --color-secondary-light: #4facfe;
     --color-secondary-background: #303033;
     --color-border-main: #636669;
     --color-border-light: #292d3c;
